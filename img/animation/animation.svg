@@ -1,0 +1,41 @@
+<svg width="887" height="632" viewBox="0 0 887 632" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="animation">
+<g id="top logo">
+<path id="main circle" d="M632.545 255C632.545 303.971 618.826 351.161 587.545 383.5C554.545 418.5 510.545 434.5 453.545 435C404.765 435 355.545 421.5 323.045 388C289.045 355.5 273.045 305.5 274.045 255C273.045 204.5 288.545 155 321.045 123C353.06 89.1994 402.663 72.7344 454.045 74C512.045 72 568.045 95 599.545 140C622.587 170.487 632.545 213.622 632.545 255Z" fill="white"/>
+<g id="inner dot group">
+<path id="inner circle" d="M510.525 364.94C497.85 389.574 478.744 401.889 453.225 401.889C427.668 401.889 408.505 389.574 395.731 364.94C382.953 340.31 376.568 303.484 376.573 254.451C376.573 205.211 382.958 168.328 395.731 143.793C408.505 119.267 427.672 107 453.239 107.004C478.758 107.004 497.859 119.267 510.539 143.783C523.223 168.3 529.551 205.187 529.527 254.442C529.527 303.484 523.195 340.32 510.525 364.94V364.94Z" fill="#E2001A"/>
+<g id="inner dot">
+<path id="Vector 1" d="M471.045 139L454.545 155.5L438.545 139.5L421.545 155.5L438.045 172L421.545 188.5L438.045 205L454.545 188.5L470.545 205.5L487.545 189L470.545 172.5L487.545 156L471.045 139Z" fill="black" stroke="black"/>
+<path id="Vector 2" d="M471.045 222L454.545 238.5L438.545 222.5L421.545 238.5L438.045 255L421.545 271.5L438.045 288L454.545 271.5L470.545 288.5L487.545 272L470.545 255.5L487.545 239L471.045 222Z" fill="black" stroke="black"/>
+<path id="Vector 3" d="M471.045 305L454.545 321.5L438.545 305.5L421.545 321.5L438.045 338L421.545 354.5L438.045 371L454.545 354.5L470.545 371.5L487.545 355L470.545 338.5L487.545 322L471.045 305Z" fill="black" stroke="black"/>
+</g>
+</g>
+</g>
+<g id="bottom texts">
+<g id="seeds">
+<text id="s" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="750" y="546.761">s</tspan></text>
+<text id="d" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="682" y="546.761">d</tspan></text>
+<text id="e" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="627" y="546.761">e</tspan></text>
+<text id="e_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="572" y="546.761">e</tspan></text>
+<text id="S" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="504" y="546.761">S</tspan></text>
+</g>
+<g id="serious">
+<text id="S_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="107" y="546.761">S</tspan></text>
+<text id="s_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="439" y="546.761">s</tspan></text>
+<text id="u" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="371" y="546.761">u</tspan></text>
+<text id="o" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="309" y="546.761">o</tspan></text>
+<text id="i" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="272" y="546.761">i</tspan></text>
+<text id="r" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="229" y="546.761">r</tspan></text>
+<text id="e_3" fill="white" xml:space="preserve" style="white-space: pre" font-family="Book Antiqua" font-size="110" font-weight="bold" letter-spacing="0em"><tspan x="174" y="546.761">e</tspan></text>
+</g>
+<g id="Group 2">
+<path id="text inner circle" d="M348.894 538.487C346.822 542.163 343.7 544 339.529 544C335.351 544 332.219 542.163 330.131 538.487C328.043 534.812 326.999 529.317 327 522.001C327 514.654 328.044 509.15 330.131 505.489C332.219 501.83 335.352 499.999 339.531 500C343.702 500 346.824 501.83 348.896 505.488C350.97 509.146 352.004 514.65 352 521.999C352 529.317 350.965 534.813 348.894 538.487V538.487Z" fill="#E2001A"/>
+<g id="inner dot_2">
+<path id="Vector 1_2" d="M342.119 504.626L339.422 507.088L336.807 504.7L334.028 507.088L336.725 509.55L334.028 512.011L336.725 514.473L339.422 512.011L342.037 514.548L344.816 512.086L342.037 509.624L344.816 507.162L342.119 504.626Z" fill="black" stroke="black"/>
+<path id="Vector 2_2" d="M342.119 517.01L339.422 519.472L336.807 517.085L334.028 519.472L336.725 521.934L334.028 524.396L336.725 526.858L339.422 524.396L342.037 526.933L344.816 524.471L342.037 522.009L344.816 519.547L342.119 517.01Z" fill="black" stroke="black"/>
+<path id="Vector 3_2" d="M342.119 529.395L339.422 531.857L336.807 529.469L334.028 531.857L336.725 534.319L334.028 536.781L336.725 539.243L339.422 536.781L342.037 539.317L344.816 536.855L342.037 534.393L344.816 531.931L342.119 529.395Z" fill="black" stroke="black"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

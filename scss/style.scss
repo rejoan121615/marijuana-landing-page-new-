@@ -1,0 +1,719 @@
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+// fonts
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400&display=swap");
+
+$mont: "Montserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+body {
+    font-family: $roboto;
+}
+
+@for $a from 1 to 7 {
+    h#{$a} {
+        font-family: $mont;
+    }
+}
+
+// responsive break points
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;
+
+// common style
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include resp(400px) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    @include resp($sm) {
+        padding-top: 185px;
+        padding-bottom: 180px;
+    }
+    @include resp($md) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+body {
+    background-color: #00060d;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h2.tittle {
+    font-weight: 800;
+    font-size: calc(22px + (85 - 22) * ((100vw - 300px) / (1600 - 300)));
+    position: relative;
+    z-index: 1000;
+    @include resp($xl) {
+        font-size: 65px;
+    }
+
+}
+
+p.para {
+    font-weight: 400;
+    position: relative;
+    z-index: 1000;
+    font-size: 18px;
+    max-width: 420px;
+    @include resp($sm) {
+        font-size: 20px;
+        // line-height: 32px;
+        line-height: 150%;
+        max-width: initial;
+    }
+    @include resp($md) {
+        font-size: 22px;
+        line-height: 175%;
+        // line-height: 35px;
+    }
+    @include resp($lg) {
+        font-size: 25px;
+        // line-height: 38px;
+    }
+    @include resp($xl) {
+        font-size: 28px;
+        // line-height: 40px;
+    }
+    @include resp($xxl) {
+        font-size: 31px;
+    }
+    @include resp($mxl) {
+        font-size: 35px;
+    }
+}
+
+// header customization
+header {
+    // position: absolute;
+    // left: 0px;
+    // top: 0px;
+    // width: 100vw;
+    @include resp (1024px) {
+        height: 19vh;
+    }
+    .container {
+        // brand
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        .brand {
+            #brand__svg {
+                width: 75px;
+                @include resp($lg) {
+                    width: 90px;
+                }
+                @include resp($xl) {
+                    font-size: 100px;
+                }
+                @include resp($xxl) {
+                    font-size: 115px;
+                }
+            }
+        }
+        // text column
+        .texts {
+            margin-top: 10px;
+            @include resp($sm) {
+                margin-top: 0px;
+            }
+            h6 {
+                font-size: 0.8rem;
+                font-weight: 400;
+                line-height: 150%;
+                // responsive
+                @include resp($lg) {
+                    font-size: 1rem;
+                }
+                @include resp($xl) {
+                    font-size: 1.25rem;
+                }
+                @include resp($xxl) {
+                    font-size: 1.5rem;
+                }
+                .text-danger,
+                .text-white {
+                    font-weight: 700;
+                }
+                .text-ash {
+                    color: #9c9c9c;
+                }
+            }
+        }
+    }
+}
+
+// main section wrapper ------------
+#main__wrapper {
+    // featuered images
+    #feature__image {
+        width: 90%;
+        // max-width: 300px;
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        z-index: 100;
+        @include resp($sm) {
+            width: 75%;
+            max-width: initial;
+        }
+        @include resp($md) {
+            width: 65%;
+            max-width: 500px;
+        }
+        @include resp($xl) {
+            width: 58%;
+            top: 60px;
+        }
+        @include resp($xxl) {
+            max-width: 570px;
+            top: 110px;
+        }
+        @include resp ($mxl) {
+            max-width: 650px;
+            top: 110px;
+        }
+    }
+}
+
+// main section ----------- >
+#main {
+    width: 100%;
+    position: relative;
+    z-index: 500;
+    @include resp (1024px) {
+        height: 81vh;
+    }
+    .container {
+        height: 100%;
+        padding-top: 90px;
+        @include resp (1024px) {
+            padding: 0px;
+        }
+    }
+    // top header texts
+    .top__header {
+        margin-top: 85px;
+        @include resp ($xxl) {
+            margin-top: 105px;
+        }
+        @include resp ($mxl) {
+            margin-top: 120px;
+        }
+        .texts {
+            // margin-top: 45px;
+            h1 {
+                font-family: Montserrat-Black;
+                font-style: normal;
+                font-size: 32px;
+                line-height: 100%;
+                @media screen and (min-width: 420px) {
+                    font-size: 37px;
+                }
+                @include resp ($sm) {
+                    font-size: 45px;
+                    line-height: 125%;
+                }
+                @include resp ($md) {
+                    font-size: 60px;
+                }
+                @include resp (1024px) {
+                    font-size: 75px;
+                }
+                @include resp ($xl) {
+                    font-size: 80px;
+                    line-height: 120%;
+                }
+                @include resp ($xxl) {
+                    font-size: 95px;
+                }
+                @include resp ($mxl) {
+                    font-size: 105px;
+                }
+            }
+        }
+    }
+
+    // small images
+    .images {
+        margin-top: 80px;
+        text-align: right;
+        @include resp (1024px) {
+            margin-top: 0px;
+        }
+        img {
+            width: calc(40px + (150 - 40) * ((100vw - 300px) / (1800 - 300)));
+            transform: translateX(-8vw);
+        }
+    }
+    // bottom text section
+    .bottom__texts {
+        h6 {
+            font-weight: 400;
+            font-size: calc(
+                12px + (26 - 12) * ((100vw - 300px) / (1800 - 300))
+            );
+            max-width: 250px;
+            line-height: 160%;
+            @media screen and (min-width: 420px) {
+                max-width: initial;
+            }
+            .bold {
+                font-weight: 800;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: blue;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+
+// serious seeds
+#serious__seeds {
+    .container {
+        padding-top: 45px;
+        padding-bottom: 0px;
+        @include resp (450px) {
+            padding-top: 100px;
+        }
+        @include resp ($xl) {
+            padding-bottom: 55px;
+        }
+        @include resp ($lg) {
+            padding-top: 200px;
+        }
+        @include resp ($xxl) {
+            padding-top: 235px;
+        }
+        @include resp ($mxl) {
+            padding-top: 280px;
+        }
+    }
+    // texts
+    .texts {
+        h2 {
+            text-align: center;
+            line-height: 90%;
+            @include resp ($xxl) {
+                line-height: 120%;
+            }
+        }
+    }
+}
+// who are section
+#who__we__are {
+    position: relative;
+    z-index: 1000;
+    .container {
+        padding-top: 100px;
+        padding-bottom: 0px;
+        @include resp($sm) {
+            padding-top: 180px;
+        }
+        @include resp ($lg) {
+            padding-top: 230px;
+        }
+        @include resp ($xl) {
+            padding-top: 180px;
+        }
+        .col-12 {
+            // image
+            img {
+                width: 120px;
+                @include resp(400px) {
+                    width: 120px;
+                }
+                @include resp($sm) {
+                    width: 135px;
+                }
+                @include resp($md) {
+                    width: 190px;
+                }
+                @include resp($lg) {
+                    width: 240px;
+                }
+                @include resp($xl) {
+                    width: 270px;
+                }
+            }
+            // heading
+            h2 {
+                @include resp($lg) {
+                    text-align: left !important;
+                }
+            }
+            // paragraph
+            p.para {
+                @include resp($lg) {
+                    text-align: left !important;
+                    font-size: 33px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+// some tittle here section
+#some__tittle__here {
+    .container {
+        padding-bottom: 40px;
+        @include resp($lg) {
+            padding-bottom: 85px;
+        }
+        @include resp($xl) {
+            padding-bottom: 150px;
+            padding-top: 230px;
+        }
+        @include resp($xxl) {
+            padding-bottom: 150px;
+        }
+        .list__item {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            @include resp($lg) {
+                margin-top: 65px;
+            }
+            li {
+                margin-bottom: 30px;
+                @include resp($xl) {
+                    margin-bottom: 45px;
+                }
+                // images
+                .img {
+                    img {
+                        border-radius: 50%;
+                        width: 135px;
+                        @include resp($lg) {
+                            width: 160px;
+                        }
+                        @include resp($xl) {
+                            width: 170px;
+                        }
+                    }
+                }
+                // paragraph section
+                p.para {
+                    // max-width: 370px;
+                    @include resp($md) {
+                        text-align: left !important;
+                    }
+                    @include resp($lg) {
+                        margin-left: 55px !important;
+                    }
+                    @include resp($xl) {
+                        margin-left: 65px !important;
+                    }
+                    @include resp($xxl) {
+                        margin-left: 75px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// middle flower section -------------
+#main__slider {
+    .container {
+        padding-top: 35px;
+        // padding-bottom: 35px;
+    }
+    .splide {
+        margin-top: 35px;
+        @include resp ($sm) {
+            margin-top: 45px;
+        }
+        @include resp($md) {
+            margin-top: 60px;
+        }
+        @include resp ($lg) {
+            margin-top: 85px;
+        }
+        @include resp ($xl) {
+            margin-top: 100px;
+        }
+        .splide__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        // splide slide
+        .splide__slide {
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            @media screen and (min-width: 420px) {
+                height: 200px;
+            }
+            @include resp($md) {
+                height: 250px;
+            }
+            @include resp($lg) {
+                height: 300px;
+            }
+            @include resp ($xl) {
+                height: 400px;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 5%;
+                transition: all 0.5s;
+                transform: scale(0.9);
+                @media screen and (min-width: 420px) {
+                    width: 120px;
+                    height: 120px;
+                }
+                @include resp($md) {
+                    width: 150px;
+                    height: 150px;
+                }
+                @include resp ($xl) {
+                    width: 190px;
+                    height: 190px;
+                }
+            }
+        }
+        // active class style
+        .is-active {
+            img {
+                transform: scale(1.3);
+                // transform: scale(1.2);
+                @include resp($md) {
+                    transform: scale(1.5);
+                }
+                @include resp($lg) {
+                    transform: scale(1.8);
+                }
+            }
+        }
+        // splide tract
+        .splide__track {
+            // overflow-y: visible;
+        }
+        // arrow btn
+        .splide__arrows {
+            display: none;
+            @include resp($lg) {
+                display: block;
+            }
+            .splide__arrow {
+                background-color: #4a4a4a !important;
+                transform: scale(1.2);
+                width: 40px;
+                height: 40px;
+                path {
+                    stroke: white;
+                    fill: white;
+                }
+                @include resp ($xl) {
+                    margin-left: -20px;
+                    width: 45px;
+                    height: 45px;
+                }
+                &:last-child {
+                    margin-right: -20px;
+                }
+            }
+        }
+        // pagination
+        .splide__pagination {
+            // transform: translateY(35px);
+            @media screen and (min-width: 420px) {
+                margin-bottom: -20px;
+            }
+            @include resp($sm) {
+                margin-bottom: -35px;
+            }
+            @include resp ($lg) {
+                display: none;
+            }
+        }
+    }
+}
+// option brand logo section ----------- 
+#brand__logo {
+    .container {
+        padding-top: 0px;
+        @include resp ($xl) {
+            padding-top: 35px;
+        }
+        @include resp ($xxl) {
+            padding-top: 50px;
+        }
+        // top section 
+        .brand {
+            // svg wrapper 
+            .svg__wrapper {
+                svg {
+                    width: 160px;
+                    @include resp ($sm) {
+                        width: 200px;
+                    }
+                    @include resp ($md) {
+                        width: 240px;
+                    }
+                    @include resp ($lg) {
+                        width: 275px;
+                    }
+                    @include resp ($xl) {
+                        width: 300px;
+                    }
+                    @include resp ($xxl) {
+                        width: 340px;
+                    }
+                    @include resp ($mxl) {
+                        width: 400px;
+                    }
+                }
+            }
+            // texts 
+            .text__wrap {
+                p.para {
+                    max-width: initial;
+                }
+            }
+        }
+        // bottom list section 
+        .list__items {
+            @include resp($lg) {
+                margin-top: 50px!important;
+            }
+            @include resp ($xl) {
+                margin-top: 70px!important;
+            }
+            @include resp($xxl) {
+                margin-top: 100px!important;
+            }
+            @include resp ($mxl) {
+                margin-top: 140px!important;
+            }
+            .item {
+                background-color: #000C1B;
+                max-width: 320px;
+                @include resp ($sm) {
+                    max-width: 410px;
+                    padding-top: 35px!important;
+                    padding-bottom: 35px!important;
+                }
+                @include resp ($md) {
+                    max-width: initial;
+                }
+                @include resp ($xl) {
+                    padding-top: 45px!important;
+                    padding-bottom: 45px!important;
+                }
+                @include resp ($xxl) {
+                    margin-bottom: 70px!important;
+                }
+                img {
+                    width: 110px;
+                    @include resp ($lg) {
+                        width: 150px;
+                    }
+                }
+                .para {
+                    max-width: 305px;
+                    @include resp ($md) {
+                        font-size: 20px!important;
+                        text-align: left!important;
+                        // line-height: 0px;
+                    }
+                    @include resp ($lg) {
+                        text-align: center!important;
+                        font-size: 25px!important;
+                        max-width: 380px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+// main animation css 
+#animation__wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    z-index: 2500;
+    overflow: hidden;
+    .container {
+        width: 100%;
+        height: 100%;
+        padding-top: 35px!important;
+        padding-bottom: 35px!important;
+        overflow: hidden;
+        .svg__wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #main__animated__svg {
+                width: 80%;
+                height: 80%;
+                @include resp ($xl) {
+                    width: 750px;
+                }
+                @include resp ($xxl) {
+                    width: 1000px;
+                }
+                @include resp ($mxl) {
+                    width: 1400px;
+                }
+            }
+        }
+    }
+}
+
+// animation css 
+#top-logo {
+    #main-circle {
+        fill: transparent;
+        stroke: white;
+    }
+}
+
+.bottom__sec__flower {
+    height: 1px;
+    img {
+        display: none;
+        @include resp ($xl) {
+            display: inline-block;
+            text-align: center;
+            width: 55px;
+            transform: translateX(15vw);
+        }
+    }
+}
